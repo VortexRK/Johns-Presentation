@@ -8,6 +8,7 @@ import portrait from './images/portrait.jpg'
 import dashboard from './images/dashboard.jpg'
 import malayalam from './images/malayalam.jpg'
 import components from './images/components.jpg'
+import NoMatch from './NoMatch'
 
 const Works = props => {
   const works = [
@@ -30,6 +31,7 @@ const Works = props => {
           <Route path={`${path}/design`}>
             <DesigningDashboard />
           </Route>
+          <Route component={NoMatch} />
         </Switch>
       </WorksWrapper>
     </main>
